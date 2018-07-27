@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="lese2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/lese2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="D:/cpppractice/game/SDL2plus-windows/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image" />
+					<Add option="-static-libgcc -static-libstdc++" />
+					<Add option="-lSDL2_mixer" />
+					<Add directory="../SDL2plus-windows/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/lese2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="D:/cpppractice/game/SDL2plus-windows/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf -lSDL2_image" />
+					<Add option="-static-libgcc -static-libstdc++" />
+					<Add option="-lSDL2_mixer" />
+					<Add directory="D:/cpppractice/game/SDL2plus-windows/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="SDL2_header.cpp" />
+		<Unit filename="SDL2_header.h" />
+		<Unit filename="cleanup.h" />
+		<Unit filename="draw.cpp" />
+		<Unit filename="draw.h" />
+		<Unit filename="global.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Unit filename="object.cpp" />
+		<Unit filename="object.h" />
+		<Unit filename="pointd.h" />
+		<Unit filename="pointd.hpp" />
+		<Unit filename="record.cpp" />
+		<Unit filename="record.h" />
+		<Unit filename="res_path.h" />
+		<Unit filename="script.cpp" />
+		<Unit filename="script.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
